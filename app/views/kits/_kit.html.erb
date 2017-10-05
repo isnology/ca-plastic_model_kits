@@ -1,0 +1,10 @@
+<div class="card">
+  <% @toggle = !@toggle %>
+  <div class="card-body <%= @toggle ? 'bg-faded text-muted' : 'bg-light text-dark' %> ">
+    <span><%= kit.name %></span>
+    <span><%= kit.brand %></span>
+    <span><%= kit.scale %></span>
+    <span><%= kit.subject %></span>
+    <span>$<%= kit.price %></span>
+  </div>
+</div>
