@@ -3,6 +3,6 @@ class Kit < ApplicationRecord
   validates :brand, presence: true
   validates :scale, presence: true
   validates :subject, presence: true
-  validates :price, numericality: { greater_than: 0.00}
+  validates :price, numericality: {greater_than_or_equal_to: 0}
   
 end

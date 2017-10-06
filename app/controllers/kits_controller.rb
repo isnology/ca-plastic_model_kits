@@ -3,7 +3,6 @@ class KitsController < ApplicationController
   
   def index
     @kits = Kit.all
-    @toggle = true
   end
 
   def show
