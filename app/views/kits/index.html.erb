@@ -1,16 +1,3 @@
 <h1>Plastic Model Kits</h1>
 
-<table class="table table-striped table-bordered">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Brand</th>
-      <th>Scale</th>
-      <th>Subject</th>
-      <th>Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <%= render @kits %>
-  </tbody>
-</table>
+<%= table_for(@kits, class: "table table-striped table-bordered", price: 'dollars')  %>
